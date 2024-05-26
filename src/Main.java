@@ -19,7 +19,10 @@ public class Main {
         cart1.addBook(physicalBook);
 
         // Show cart items for customer id 1
+        System.out.println("*******************************************************");
+        System.out.println(customer.name + "'s ordered books");
         cart1.showCartItems();
+        System.out.println("********************************************************");
 
         ShoppingCart cart2 = new ShoppingCart();
         cart2.addBook(ebook);
@@ -27,7 +30,10 @@ public class Main {
         cart2.removeBook(physicalBook);
 
         // Show cart items for customer id 2
+        System.out.println("********************************************************");
+        System.out.println(customer2.name + "'s orderedseparately books");
         cart2.showCartItems();
+        System.out.println("********************************************************");
 
         // Create an order
         List<Book> booksAmal = new ArrayList<>();
