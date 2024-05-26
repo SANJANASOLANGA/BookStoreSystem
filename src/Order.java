@@ -24,8 +24,4 @@ public class Order {
     public void placeOrder() {
         System.out.println("Order placed successfully for " + customer.getName() + ". Total amount: " + totalAmount);
     }
-
-    public void cancelOrder() {
-        System.out.println("Order cancelled for " + customer.getName() + ".");
-    }
 }
