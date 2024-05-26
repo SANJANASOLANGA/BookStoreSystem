@@ -14,6 +14,7 @@ public class Main {
         // Create a shopping cart and add books
         ShoppingCart cart = new ShoppingCart();
         cart.addBook(ebook);
+        cart.addBook(ebook2);
         cart.addBook(physicalBook);
 
         // Show cart items
@@ -22,6 +23,7 @@ public class Main {
         // Create an order
         List<Book> books = new ArrayList<>();
         books.add(ebook);
+        books.add(ebook2);
         books.add(physicalBook);
         Order order = new Order(1, customer, books);
 
