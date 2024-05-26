@@ -20,6 +20,9 @@ public class ShoppingCart {
         double total = 0;
         for (Book book : cartItems) {
             total += book.getPrice();
+            if (book instanceof PhysicalBook) {
+                total += ((PhysicalBook) book).getShippingCost();
+            }
         }
         return total;
     }
