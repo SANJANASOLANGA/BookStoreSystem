@@ -20,7 +20,7 @@ public class Main {
 
         // Show cart items for customer id 1
         System.out.println("*******************************************************");
-        System.out.println(customer.name + "'s ordered books");
+        System.out.println(customer.name + "'s ordered book/s");
         cart1.showCartItems();
         System.out.println("********************************************************");
 
@@ -31,7 +31,7 @@ public class Main {
 
         // Show cart items for customer id 2
         System.out.println("********************************************************");
-        System.out.println(customer2.name + "'s orderedseparately books");
+        System.out.println(customer2.name + "'s ordered book/s");
         cart2.showCartItems();
         System.out.println("********************************************************");
 
