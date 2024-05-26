@@ -1,5 +1,5 @@
 public class Ebook extends Book {
-    private String format;
+    final String format;
 
     public Ebook(int id, String title, String author, double price, String format) {
         super(id, title, author, price);
