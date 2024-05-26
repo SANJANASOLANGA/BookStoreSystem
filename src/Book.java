@@ -1,8 +1,8 @@
 public abstract class Book {
-    private int id;
-    private String title;
-    private String author;
-    private double price;
+    final int id;
+    final String title;
+    final String author;
+    final double price;
 
     public Book(int id, String title, String author, double price) {
         this.id = id;
