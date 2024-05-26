@@ -10,6 +10,11 @@ public class Main {
         // Create a customer
         Customer customer = new Customer(1, "Alice Smith", "alice.smith@example.com");
 
+        // Create a shopping cart and add books
+        ShoppingCart cart = new ShoppingCart();
+        cart.addBook(ebook);
+        cart.addBook(physicalBook);
+
 
     }
 }
