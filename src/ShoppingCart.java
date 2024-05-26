@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
-    private List<Book> cartItems;
+    final List<Book> cartItems;
 
     public ShoppingCart() {
         cartItems = new ArrayList<>();
@@ -14,17 +14,6 @@ public class ShoppingCart {
 
     public void removeBook(Book book) {
         cartItems.remove(book);
-    }
-
-    public double calculateTotal() {
-        double total = 0;
-        for (Book book : cartItems) {
-            total += book.getPrice();
-            if (book instanceof PhysicalBook) {
-                total += ((PhysicalBook) book).getShippingCost();
-            }
-        }
-        return total;
     }
 
     public void showCartItems() {
