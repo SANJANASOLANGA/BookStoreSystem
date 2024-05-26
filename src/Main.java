@@ -10,16 +10,24 @@ public class Main {
 
         // Create a customer
         Customer customer = new Customer(1, "Amal Perera", "amalperera@gmail.com");
-        Customer customer2 = new Customer(1, "Nimal Amarasinghe", "nimalamarasinghe@gmail.com");
+        Customer customer2 = new Customer(2, "Nimal Amarasinghe", "nimalamarasinghe@gmail.com");
 
         // Create a shopping cart and add books
-        ShoppingCart cart = new ShoppingCart();
-        cart.addBook(ebook);
-        cart.addBook(ebook2);
-        cart.addBook(physicalBook);
+        ShoppingCart cart1 = new ShoppingCart();
+        cart1.addBook(ebook);
+        cart1.addBook(ebook2);
+        cart1.addBook(physicalBook);
 
-        // Show cart items
-        cart.showCartItems();
+        // Show cart items for customer id 1
+        cart1.showCartItems();
+
+        ShoppingCart cart2 = new ShoppingCart();
+        cart2.addBook(ebook);
+        cart2.addBook(ebook2);
+        cart2.addBook(physicalBook);
+
+        // Show cart items for customer id 2
+        cart2.showCartItems();
 
         // Create an order
         List<Book> booksAmal = new ArrayList<>();
