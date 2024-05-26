@@ -12,5 +12,9 @@ public class PhysicalBook extends Book {
     public String getDetails() {
         return getTitle() + " by " + getAuthor() + " (Weight: " + weight + "kg)";
     }
+
+    public double getShippingCost() {
+        return shippingCost;
+    }
 }
 
