@@ -24,7 +24,7 @@ public class Main {
         ShoppingCart cart2 = new ShoppingCart();
         cart2.addBook(ebook);
         cart2.addBook(ebook2);
-        cart2.addBook(physicalBook);
+        cart2.removeBook(physicalBook);
 
         // Show cart items for customer id 2
         cart2.showCartItems();
