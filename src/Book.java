@@ -16,5 +16,5 @@ public abstract class Book {
     public String getAuthor() { return author; }
     public double getPrice() { return price; }
 
-
+    public abstract String getDetails();
 }
