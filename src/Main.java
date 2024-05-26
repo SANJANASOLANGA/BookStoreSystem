@@ -15,6 +15,16 @@ public class Main {
         cart.addBook(ebook);
         cart.addBook(physicalBook);
 
+        // Show cart items
+        cart.showCartItems();
 
+        // Create an order
+        List<Book> books = new ArrayList<>();
+        books.add(ebook);
+        books.add(physicalBook);
+        Order order = new Order(1, customer, books);
+
+        // Place the order
+        order.placeOrder();
     }
 }
