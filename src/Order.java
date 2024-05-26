@@ -25,10 +25,14 @@ public class Order {
     }
 
     public void placeOrder() {
+        System.out.println("******************************************************************");
         System.out.println("Order placed successfully for " + customer.getName() + ". Total amount: " + String.format("%.2f", totalAmount));
+        System.out.println("******************************************************************");
     }
 
     public void cancelOrder() {
+        System.out.println("**************************************************");
         System.out.println("Order cancelled for " + customer.getName() + ".");
+        System.out.println("**************************************************");
     }
 }
