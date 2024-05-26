@@ -17,11 +17,18 @@ public class Order {
         double total = 0;
         for (Book book : books) {
             total += book.getPrice();
+            if (book instanceof PhysicalBook) {
+                total += ((PhysicalBook) book).getShippingCost();
+            }
         }
         return total;
     }
 
     public void placeOrder() {
         System.out.println("Order placed successfully for " + customer.getName() + ". Total amount: " + totalAmount);
+    }
+
+    public void cancelOrder() {
+        System.out.println("Order cancelled for " + customer.getName() + ".");
     }
 }
