@@ -1,5 +1,5 @@
 public class PhysicalBook extends Book {
-    private double weight;
+    final double weight;
     private double shippingCost;
 
     public PhysicalBook(int id, String title, String author, double price, double weight, double shippingCost) {
