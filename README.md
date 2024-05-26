@@ -1,6 +1,6 @@
-# Online Bookstore System
+# Bookstore System
 
-This is a simple online bookstore system built using Java, demonstrating key Object-Oriented Programming (OOP) principles: encapsulation, abstraction, inheritance, and polymorphism.
+This is a simple bookstore system built using Java, demonstrating key Object-Oriented Programming (OOP) principles: encapsulation, abstraction, inheritance, and polymorphism.
 
 ## Features
 
