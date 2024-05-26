@@ -10,6 +10,16 @@ public class Order {
         this.orderId = orderId;
         this.customer = customer;
         this.books = books;
+        this.totalAmount = calculateTotalAmount();
     }
+
+    public double calculateTotalAmount() {
+        double total = 0;
+        for (Book book : books) {
+            total += book.getPrice();
+        }
+        return total;
+    }
+
 
 }
