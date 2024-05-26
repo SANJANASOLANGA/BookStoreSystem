@@ -16,6 +16,14 @@ public class ShoppingCart {
         cartItems.remove(book);
     }
 
+    public double calculateTotal() {
+        double total = 0;
+        for (Book book : cartItems) {
+            total += book.getPrice();
+        }
+        return total;
+    }
+
 
 }
 
