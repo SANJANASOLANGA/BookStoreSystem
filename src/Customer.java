@@ -1,7 +1,7 @@
 public class Customer {
-    private int id;
-    private String name;
-    private String email;
+    final int id;
+    final String name;
+    final String email;
 
     public Customer(int id, String name, String email) {
         this.id = id;
