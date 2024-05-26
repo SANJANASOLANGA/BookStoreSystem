@@ -24,6 +24,10 @@ public class ShoppingCart {
         return total;
     }
 
-
+    public void showCartItems() {
+        for (Book book : cartItems) {
+            System.out.println(book.getDetails());
+        }
+    }
 }
 
