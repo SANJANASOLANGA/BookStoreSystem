@@ -1,10 +1,10 @@
 import java.util.List;
 
 public class Order {
-    private int orderId;
-    private Customer customer;
-    private List<Book> books;
-    private double totalAmount;
+    final int orderId;
+    final Customer customer;
+    final List<Book> books;
+    final double totalAmount;
 
     public Order(int orderId, Customer customer, List<Book> books) {
         this.orderId = orderId;
