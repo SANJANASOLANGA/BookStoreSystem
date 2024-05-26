@@ -11,9 +11,5 @@ public class Customer {
 
     // getters
     public String getName() { return name; }
-    public String getEmail() { return email; }
 
-    public String getCustomerInfo() {
-        return "Customer ID: " + id + ", Name: " + name + ", Email: " + email;
-    }
 }
